@@ -1,5 +1,5 @@
 function xpUpdate.randXp()
-    return ZombRand(0, 70) == 0;
+    return ZombRand(70 * GameTime.getInstance():getInvMultiplier()) == 0;
 end
 
 local function isSleepy(player)
